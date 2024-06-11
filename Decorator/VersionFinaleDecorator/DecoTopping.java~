@@ -1,0 +1,7 @@
+public class DecoTopping extends Decorator{
+
+    public DecoTopping(DecoGarniture decogarniture, Ingredient ingredient){
+	String ajout = decogarniture.getComposition();
+	super(ingredient);
+
+    }

@@ -1,0 +1,6 @@
+public class DecoGarniture extends Decorator{
+
+    public DecoGarniture(Ingredients ingredient){
+	super(ingredient);
+    }
+}

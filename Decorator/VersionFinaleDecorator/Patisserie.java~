@@ -1,0 +1,21 @@
+public class Patisserie {
+
+    private int nombreGateaux=5;
+    private int nombreIngredients=10;
+    private ArrayList<Gateau> stockGateau = new ArrayList<Gateau>(nombreGateaux);
+    private ArrayList<Ingredients> stockIngredients = new ArrayList<Ingredients>(nombreIngredients);
+
+    public Patisserie(int nombreGateaux,int nombreIngredients){
+	this.nombreGateaux = nombreGateaux;
+	this.nombreIngredients = nombreIngredients;
+    }
+
+    public void setnombreGateaux(int nombreGateaux){
+	this.nombreGateaux= nombreGateaux;
+    }
+
+    public void setnombreIngredients(int nombreIngredients){
+	this.nombreIngredients= nombreIngredients;
+    }
+
+}

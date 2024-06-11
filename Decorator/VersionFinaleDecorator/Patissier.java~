@@ -1,0 +1,19 @@
+public class Patissier{
+
+    private String nom;
+    private Builder builder;
+    
+    public Patissier(String nom; Builder builder){
+
+	this.nom = nom;
+	this.builder = builder;
+    }
+
+    public void faireGateau(String recette)
+    {
+	this.builder.Gateau();
+	this.builder.Garniture();
+	this.builder.Topping();
+    }
+    
+}

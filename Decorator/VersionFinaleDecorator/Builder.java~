@@ -1,0 +1,8 @@
+public class Builder{
+
+    private Gateau gateau;
+    private Ingredients ingredient;
+    private DecoGarniture garniture;
+    private DecoTopping topping1;
+    private DecoTopping topping2;
+    private DecoTopping topping3;

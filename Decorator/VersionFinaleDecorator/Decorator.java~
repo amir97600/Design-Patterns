@@ -1,0 +1,31 @@
+abstract class Decorator{
+
+    protected Gateau gateau;
+    
+    public Decorator(Ingredients ingredient,Gateau gateau){
+	gateau.setNom(gateau.getNom()+ingredient.getNom());
+	this.gateau = gateau;
+
+    }
+
+    public Decorator(Decorator decorateur,Ingredients ingredient){
+	String ajout = decorateur.getComposition();
+	this.gateau.setNom(ajout);
+	gateau.setNom(gateau.getNom()+ingredient.getNom());
+
+    }
+
+    public Decorator(Ingredients ingredient){
+	gateau.setNom(gateau.getNom()+ingredient.getNom());
+
+    }
+
+    public String getComposition(){
+        return this.gateau.getNom();
+    }
+
+    public void setComposition(String ajout){
+	this.gateau.setNom(this.gateau.getNom()+ajout);
+    }
+
+}
